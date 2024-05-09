@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background: pink;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box .label {
+    color: rgb(9, 16, 14);
+}
+
+.form :where(.input-box input, .select) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(29, 17, 1);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.form :where(.program-option, program) {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.form .program {
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.form .program-box {
+    margin-top: 20px;
+}
+
+.program-box .h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 400px;
+    margin-bottom: 8px;
+}
+
+.form :where(.program input, label){
+    cursor: pointer;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.select-box {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(29, 17, 1);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    font-size: 12px;
+    border: none;
+    color: aliceblue;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: pink;
+}
+
+.back-to-home-button {
+  background-color: pink;
+  color: rgb(16, 1, 1);
+  padding: 10px 16px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 80px ;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+@media screen and (max-width:500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+    
+}
